@@ -4,7 +4,7 @@ import { IdCardComponent } from './id-card/id-card.component';
 
 const routes: Routes = [
   {path: "idcard", component: IdCardComponent},
-  {path: "**", redirectTo: "/idcard", pathMatch: "full"}
+  {path: "**", redirectTo: "", pathMatch: "full"}
 ];
 
 @NgModule({
