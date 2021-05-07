@@ -1,12 +1,19 @@
-<div class="card">
-    <div class="card-header">
-        THIS IS ME
+<div class="container">
+  <div class="row">
+    <div id="photo" class="col-4">
+      <img class="img-fluid rounded-start" [src]="imgSrc" alt="taz">
     </div>
-    <div class="card-body">
+    <div id="card" class="card rounded col-8">
+      <div class="card-header">
+        {{firstName + " " + lastName}}
+      </div>
+      <div class="card-body">
         <h5 class="card-title">Name</h5>
         <p class="card-text">John Doe</p>
-    </div>
-    <div class="card-footer">
+      </div>
+      <div class="card-footer text-danger">
         Thanks for seeing THIS
+      </div>
     </div>
+  </div>
 </div>

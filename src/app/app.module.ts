@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IdCardComponent } from './id-card/id-card.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
