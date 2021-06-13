@@ -6,12 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./graph-demo.component.scss']
 })
 export class GraphDemoComponent implements OnInit {
-
+  
+  nodes:Array<any>;
   constructor() { 
-    
+    this.nodes=[];
   }
-  nodes:Array<number> = Array(10);
+  
   ngOnInit(): void {
   }
+
+  addNode(): void {
+    this.nodes.unshift(1);
+  }
+  
 
 }

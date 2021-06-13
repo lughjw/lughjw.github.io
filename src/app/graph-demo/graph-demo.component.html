@@ -1,3 +1,6 @@
-<div>
-    <graph-node *ngFor="let node of nodes"></graph-node>
+<div class="container-fluid border">
+    <button (click)="addNode()">Add Node</button>
+    <div class="row">
+        <graph-node class="col-2" *ngFor="let node of nodes"></graph-node>
+    </div>
 </div>

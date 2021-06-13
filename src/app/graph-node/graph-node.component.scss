@@ -1,6 +1,13 @@
 .example-box {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+    // height: 50%;
+    padding-bottom: 100%;
+    // padding-bottom: 100% yellow;
+    // padding-left: blue;
+    // padding-right: green;
+    // padding-top: pink;
+    // margin: teal;
+    margin: 0;
     border: solid 1px #ccc;
     color: rgba(0, 0, 0, 0.87);
     cursor: move;
