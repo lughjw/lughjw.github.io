@@ -12,7 +12,7 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build and the `--output-path=docs` to put the build files where github-pages is expecting them. The full command is `npx ng build --prod=true --output-path=docs`
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build and the `--output-path=docs` to put the build files where github-pages is expecting them. The full command is `npx ng build --prod=true --output-path=docs`. For routing on github pages also make a new file in docs called 404.html which is identical to index.html. `copy docs\index.html docs\404.html`
 
 ## Running unit tests
 
