@@ -9,6 +9,7 @@ import { GraphDemoComponent } from './graph-demo/graph-demo.component';
 import { RouterModule } from '@angular/router';
 import { GraphNodeComponent } from './graph-node/graph-node.component';
 import { FinanceComponent } from './finance/finance.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { FinanceComponent } from './finance/finance.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
-    DragDropModule
+    DragDropModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

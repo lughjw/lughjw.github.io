@@ -1,12 +1,15 @@
-<form (ngSubmit)="onSubmit()" #interestForm="ngForm">
+<form (ngSubmit)="onSubmit()" #predictionForm="ngForm">
     <label for="principal">Principal</label>
-    <input type="number" class="form-control" id="name" required [(ngModel)]="model.principal" name="">
-    <label>Interest Rate</label>
-    <input>
-    <label>Payments per cycle</label>
-    <input>
-    <label>Number of cycles</label>
-    <input>
-    <label>Amount contributed per Payment</label>
-    <input>
+    <input type="number" class="form-control" id="principal" required [(ngModel)]="principal" name="principal">
+    <label for="interestRate">Interest Rate</label>
+    <input type="number" class="form-control" id="interestRate" required [(ngModel)]="interestRate" name="interestRate">
+    <label for="compoundsPerCycle">Payments per cycle</label>
+    <input type="number" class="form-control" id="compoundsPerCycle" required [(ngModel)]="compoundsPerCycle" name="compoundsPerCycle">
+    <label for="cycleCount">Number of cycles</label>
+    <input type="number" class="form-control" id="cycleCount" required [(ngModel)]="cycleCount" name="cycleCount">
+    <label for="cyclyPayment">Amount contributed per Payment</label>
+    <input type="number" class="form-control" id="cyclyPayment" required [(ngModel)]="cyclyPayment" name="cyclyPayment">
+    <button type="submit" class="btn btn-success">Calculate</button>
 </form>
+
+<label>{{this.total}}</label>
