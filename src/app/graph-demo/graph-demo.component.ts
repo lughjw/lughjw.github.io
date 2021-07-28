@@ -8,15 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class GraphDemoComponent implements OnInit {
   
   nodes:Array<any>;
+  edges:Array<any>;
   constructor() { 
     this.nodes=[];
+    this.edges=[];
   }
   
   ngOnInit(): void {
   }
 
   addNode(): void {
-    this.nodes.unshift(1);
+    this.nodes.unshift(this.nodes.length+1);
   }
   
 

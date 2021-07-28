@@ -8,6 +8,7 @@ import { IdCardComponent } from './id-card/id-card.component';
 import { GraphDemoComponent } from './graph-demo/graph-demo.component';
 import { RouterModule } from '@angular/router';
 import { GraphNodeComponent } from './graph-node/graph-node.component';
+import { FinanceComponent } from './finance/finance.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { GraphNodeComponent } from './graph-node/graph-node.component';
     AppComponent,
     IdCardComponent,
     GraphDemoComponent,
-    GraphNodeComponent
+    GraphNodeComponent,
+    FinanceComponent
   ],
   imports: [
     BrowserModule,

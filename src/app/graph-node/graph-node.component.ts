@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'graph-node',
@@ -6,8 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./graph-node.component.scss']
 })
 export class GraphNodeComponent implements OnInit {
-
-  constructor() { }
+  @Input() value:any = "";
+  constructor() {}
 
   ngOnInit(): void {
   }
