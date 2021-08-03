@@ -3,13 +3,15 @@
     <input type="number" class="form-control" id="principal" required [(ngModel)]="principal" name="principal">
     <label for="interestRate">Interest Rate</label>
     <input type="number" class="form-control" id="interestRate" required [(ngModel)]="interestRate" name="interestRate">
-    <label for="compoundsPerCycle">Payments per cycle</label>
-    <input type="number" class="form-control" id="compoundsPerCycle" required [(ngModel)]="compoundsPerCycle" name="compoundsPerCycle">
-    <label for="cycleCount">Number of cycles</label>
-    <input type="number" class="form-control" id="cycleCount" required [(ngModel)]="cycleCount" name="cycleCount">
+    <label for="compoundsPerPeriod">Payments per period</label>
+    <input type="number" class="form-control" id="compoundsPerPeriod" required [(ngModel)]="compoundsPerPeriod" name="compoundsPerPeriod">
+    <label for="periodCount">Number of periods</label>
+    <input type="number" class="form-control" id="periodCount" required [(ngModel)]="periodCount" name="periodCount">
     <label for="cyclyPayment">Amount contributed per Payment</label>
     <input type="number" class="form-control" id="cyclyPayment" required [(ngModel)]="cyclyPayment" name="cyclyPayment">
     <button type="submit" class="btn btn-success">Calculate</button>
 </form>
-
-<label>{{this.total}}</label>
+<label>Total from Monthly Payments: {{this.totalFromPeriodicPayments | currency}}</label><br>
+<label>Total from Monthly Interest: {{this.totalInterestFromPayments | currency}}</label><br>
+<label>Total Interest From initial Investment: {{this.totalInterestFromPrincipal | currency}}</label><br>
+<label>Total: {{this.total | currency}}</label>
